@@ -1,8 +1,22 @@
 import './App.css'
-import Ha from './components/ha';
+import Ha from './components/Ha';
+
+import React from 'react'
+import './App.css'
+
+
 
 function App() {
-  return <div><Ha /></div>
-  console.log(g);
+ 
+
+  return (
+    <>
+      <div><Ha></Ha></div>
+  
+    </>
+  )
 }
+
 export default App
+
+
