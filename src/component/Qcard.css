@@ -9,21 +9,20 @@ body{
     background-color: #247880;
     color: #111;
 }
-
-.container{
+.qcontainer{
     max-width: 1300px;
     width: 100%;
     margin: auto;
     padding: 0px 20px;
 }
 
-section{
+.sec{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-h1{
+.qname{
     
     color: #fff;
     font-size: 50px;
@@ -31,10 +30,10 @@ h1{
     text-align: center;
     margin-bottom: 40px;
 }
-h1:hover{
+.qname:hover{
     color: #013440;
 }
-.cards{
+.qcards{
     display: flex;
     flex-wrap: wrap;
     
@@ -56,7 +55,7 @@ h1:hover{
     font-size: 25px;
 }
 
-.card{
+.qcard{
     flex: 0 0 calc(33.33% - 20px);
     max-width:calc(33.33% - 20px) ;
 
@@ -69,7 +68,7 @@ h1:hover{
     border: 3px solid transparent;
 }
 
-.card:hover{
+.qcard:hover{
     background-color: #013440;
     
     color: #fff;
@@ -81,11 +80,11 @@ h1:hover{
     section{
         padding: 20px 0px;
     }
-    h1{
+    .qname{
         font-size: 30px;
         line-height: 40px;
     }
-    .card{
+    .qcard{
         flex: 0 0 calc(50% - 20px);
         max-width: calc(50% - 20px);
     }
@@ -102,7 +101,7 @@ h1:hover{
 
 @media(max-width: 600px){
 
-    .card{
+    .qcard{
         flex: 0 0 100%;
         max-width: 100%;
     }

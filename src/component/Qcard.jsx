@@ -1,7 +1,5 @@
-
 import React, { useState } from "react";
 import "./Qcard.css";
-
 export default function Qcard() {
   const db = [
     {
@@ -56,12 +54,12 @@ export default function Qcard() {
 
   return (
     <div>
-      <section>
-        <div className="container">
-          <h1>ብሔራዊ </h1>
-          <div className="cards">
+      <section className="sec">
+        <div className="qcontainer">
+          <h1 className="qname">ብሔራዊ </h1>
+          <div className="qcards">
             {cards.map((card, i) => (
-              <div key={i} id={card.id} className="card">
+              <div key={i} id={card.id} className="qcard">
                 <h3>{card.title}</h3>
                 <p>{card.q}</p>
               </div>

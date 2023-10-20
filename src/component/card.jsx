@@ -29,7 +29,6 @@ export default function LevelCard({ NewArr }) {
                 >
                   <img
                     className="CardImg  "
-                    id={NewArr[0].id}
                     src={NewArr[0].img}
                     alt="..."
                     ref={refs}
@@ -68,7 +67,6 @@ export default function LevelCard({ NewArr }) {
               <div className="card">
                 <img
                   className="CardImg"
-                  id={NewArr[1].id}
                   src={NewArr[1].img}
                   alt="..."
                   ref={reff}
@@ -105,7 +103,6 @@ export default function LevelCard({ NewArr }) {
               <div className="card">
                 <img
                   className="CardImg"
-                  id={NewArr[2].id}
                   src={NewArr[2].img}
                   alt="..."
                   ref={refl}
