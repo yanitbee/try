@@ -1,0 +1,42 @@
+.parent{
+    width: max-content;
+    margin-left: 6%;
+}
+.card{
+    background-color: #5e787d;
+    width: 400px;
+    max-width: 400px;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+.CardImg{
+max-width: 100%;
+box-shadow: 5px 10px 15px  #111111;
+z-index: 1;
+}
+.card:hover{
+    min-width:  450px;
+    margin-top: -15%;
+}
+.Levelname{
+    padding: 0 auto;
+    margin: 0 auto;
+    font-size: 5rem;
+    margin-left: 5rem;
+    color: #3ec7b2;
+}
+.parent:hover .card:not(:hover){
+    max-width: 350px;
+    filter: blur(8px);
+    z-index: 0;
+}
+.place{
+    margin-left:3%;
+    margin-top: -35rem;
+    padding: 0;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    overflow: hidden;
+    font-size: 4rem;
+    z-index: 2;
+}

@@ -1,6 +1,8 @@
-import './App.css'
-
+import "./App.css";
+import RouthPath from "./pages/route";
 function App() {
-  console.log(g);
+  return <RouthPath />;
+  //import RouthPath from "./pages/route";
 }
-export default App
+
+export default App;
