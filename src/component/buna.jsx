@@ -1,9 +1,11 @@
 import "./buna.css";
-export default function Buna() {
+import {CiCoffeeBean} from 'react-icons/ci'
+import {BiSolidCoffeeBean} from 'react-icons/bi'
+
+export default function Buna(complete) {
   return (
     <>
-      <h1>a</h1>
-      <div className="Lower"></div>
+   {complete.completes === 100? <BiSolidCoffeeBean color= "#583318" size={30} /> : <CiCoffeeBean  color= "#583318" size={30}/> }
     </>
   );
 }

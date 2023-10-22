@@ -1,10 +1,9 @@
 .parent{
+    text-align: center;
     width: max-content;
-    margin-left: 6%;
+    margin-left: 8%;
 }
-.card{
-    background-color: #5e787d;
-    width: 400px;
+.levels{
     max-width: 400px;
     border-radius: 1rem;
     margin: 0.5rem;
@@ -12,31 +11,56 @@
 .CardImg{
 max-width: 100%;
 box-shadow: 5px 10px 15px  #111111;
-z-index: 1;
-}
-.card:hover{
-    min-width:  450px;
-    margin-top: -15%;
+
 }
 .Levelname{
     padding: 0 auto;
     margin: 0 auto;
     font-size: 5rem;
-    margin-left: 5rem;
-    color: #3ec7b2;
+    margin-left: 12rem;
+    color:  #5e787d;;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #425052;
 }
-.parent:hover .card:not(:hover){
+@media (min-width: 900px){
+.levels:hover{
+    min-width:  450px;
+    margin-top: -15%;
+}
+.parent:hover .levels:not(:hover){
     max-width: 350px;
     filter: blur(8px);
     z-index: 0;
 }
+
+}
 .place{
     margin-left:3%;
-    margin-top: -35rem;
+    margin-top: -38rem;
     padding: 0;
     writing-mode: vertical-lr;
     text-orientation: upright;
-    overflow: hidden;
     font-size: 4rem;
     z-index: 2;
+}
+.Imgplace.levels{
+    min-width:  450px;
+    margin-top: -15%;
+}
+.coffee{
+    margin-top: 0.5rem;
+}
+
+
+
+
+
+@media(max-width: 969px){
+    .parent{
+        margin: 0;
+    }
+    .levels{
+        width: 350px;
+        margin: 0;
+    }
 }
