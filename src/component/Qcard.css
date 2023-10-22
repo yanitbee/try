@@ -4,11 +4,6 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
-body{
-    background-color: #247880;
-    color: #111;
-}
 .qcontainer{
     max-width: 1300px;
     width: 100%;

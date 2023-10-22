@@ -1,11 +1,12 @@
 .LeftArrow{
     margin-left: 3% ;
-    z-index: 1;
+    z-index: 3;
     opacity: 1;
+    
 }
 .RightArrow{
     margin-right: 3%;
-    z-index: 1;
+    z-index: 3;
     opacity: 1;
 }
 .backColor{
@@ -14,7 +15,7 @@
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
-    z-index: 1;
+    z-index: 3;
 }
 .backColor:hover{
     background-color: #7fffd4;

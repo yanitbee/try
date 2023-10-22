@@ -1,45 +1,69 @@
 import { useState } from "react";
 import LevelCard from "../component/card";
 import Arrow from "../component/arrow";
-
+import {Helmet, HelmetProvider} from 'react-helmet-async';
 function Full() {
   //the database
   let ImgProp = [
     {
-      name: "ብሄራዊ",
+      name: "ብሔራዊ",
       img: "/image/final beharaw1.png",
       id: "first",
       Level: "ሀ",
+      q1complete:100,
+      q2complete:100,
+      q3complete:100,
+      min:0
     },
     {
       name: "መርካቶ",  
       img: "/image/markato1.png",
       id: "second",
       Level: "ለ",
+      q1complete:100,
+      q2complete:100,
+      q3complete:34,
+      min:0
     },
     {
       name: "ፒያሳ",
       img: "/image/piassa.png",
       id: "third",
-      Level: "ሕ",
+      Level: "ሐ",
+      q1complete:25,
+      q2complete:56,
+      q3complete:100,
+      min:0
     },
     {
       name: "4ኪሎ",
       img: "/image/4kilo.png",
       id: "first",
-      Level: "a",
+      Level: "መ",
+      q1complete:34,
+      q2complete:100,
+      q3complete:0,
+      min:300
     },
     {
       name: "ብሄራዊ",
       img: "/image/g.jpg",
       id: "second",
-      Level: "l",
+      Level: "ረ",
+      q1complete:0,
+      q2complete:0,
+      q3complete:0,
+      min:600
     },
     {
       name: "ብሄራዊ",
       img: "/image/final beharaw.png",
       id: "third",
-      Level: "g",
+      Level: "ሰ",
+      q1complete:100,
+      q2complete:67,
+      q3complete:24,
+      min:900
     },
   ];
   //end level
@@ -72,10 +96,15 @@ function Full() {
   }
   return (
     <>
-      <div>
+    <HelmetProvider>
+      <div style={{ backgroundcolor: "#5e787d",   height: "100dvh"}}>
+      <Helmet>
+                <style>{'body { background-color: #5e787d; }'}</style>
+            </Helmet>
         <Arrow slide={setslide} />
         <LevelCard NewArr={NewArr} />
       </div>
+      </HelmetProvider>
     </>
   );
 }
